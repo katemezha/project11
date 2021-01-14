@@ -9,7 +9,7 @@
       }"
     >
       <h2>Id: {{ id }}</h2>
-      <p>Датчик</p>
+      <p>{{name}}</p>
       <button (click)="indicator.show = false">Удалить</button>
     </div>
   </div>
@@ -18,5 +18,5 @@
     <label>Название датчика:
     <input type="text" class='form-control' #someInput>
     </label>
-    <button (click)="createSensor(someInput.value)">Добавить</button>
+    <button (click)="createInd(someInput.value)">Добавить</button>
 </div>
