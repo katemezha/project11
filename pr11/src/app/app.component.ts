@@ -1,10 +1,26 @@
 import { Component } from '@angular/core';
 
+export interface Indicator {
+  status: boolean;
+  show: boolean;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'pr11';
+  indicators: Indicator[] = [
+    { status: Math.random() <= 0.5, show: true },
+    { status: Math.random() <= 0.5, show: true },
+    { status: Math.random() <= 0.5, show: true },
+    { status: Math.random() <= 0.5, show: true },
+    { status: Math.random() <= 0.5, show: true },
+    { status: Math.random() <= 0.5, show: true },
+    { status: Math.random() <= 0.5, show: true },
+    { status: Math.random() <= 0.5, show: true },
+    { status: Math.random() <= 0.5, show: true },
+    { status: Math.random() <= 0.5, show: true }
+  ];
 }

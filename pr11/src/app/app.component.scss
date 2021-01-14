@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .card {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border: 3px solid crimson;
+    border-radius:20px;
+    color: white;
+    &.online {
+      background-color: darkred;
+    }
+    &.offline {
+      background-color: darkgreen;
+    }
+  }
+}
