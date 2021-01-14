@@ -4,7 +4,6 @@ export interface Indicator {
   status: boolean;
   show: boolean;
   name: string;
-  ind:string;
 }
 
 @Component({
@@ -25,6 +24,6 @@ export class AppComponent {
     { status: Math.random() <= 0.5, name:"Датчик", show: true },
   ];
    createInd(ind) {
-    this.indicators.push({name: ind, status: Math.random() <= 0.5, show: true})
+    this.indicators.push({status: Math.random() <= 0.5, show: true, name: ind})
   }
 }
